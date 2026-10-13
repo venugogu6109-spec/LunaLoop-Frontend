@@ -1,0 +1,264 @@
+.custom-orders-page {
+  padding: 28px;
+  color: #302638;
+}
+
+.custom-orders-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.custom-orders-eyebrow {
+  color: #a45a88;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.custom-orders-header h1 {
+  margin: 8px 0;
+  font-size: 30px;
+}
+
+.custom-orders-header p {
+  color: #807583;
+}
+
+.custom-orders-refresh,
+.custom-orders-empty button,
+.custom-orders-back {
+  padding: 11px 17px;
+  border: 1px solid #e7d8e4;
+  border-radius: 10px;
+  background: white;
+  color: #744768;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.custom-orders-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.custom-orders-stat {
+  padding: 20px;
+  border: 1px solid #eee4ec;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.custom-orders-stat span,
+.custom-order-details span {
+  display: block;
+  color: #827887;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.custom-orders-stat strong {
+  font-size: 27px;
+}
+
+.custom-orders-empty {
+  padding: 45px 20px;
+  text-align: center;
+  border: 1px dashed #e2cfe0;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.custom-orders-empty-icon {
+  color: #a45a88;
+  font-size: 34px;
+}
+
+.custom-orders-empty h2 {
+  margin-bottom: 8px;
+}
+
+.custom-orders-empty p {
+  color: #807583;
+  margin-bottom: 20px;
+}
+
+.custom-order-card {
+  margin-bottom: 20px;
+  padding: 23px;
+  border: 1px solid #eee4ec;
+  border-radius: 16px;
+  background: white;
+}
+
+.custom-order-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.custom-order-number {
+  color: #a45a88;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.custom-order-card-header h2 {
+  margin: 8px 0 0;
+  font-size: 21px;
+}
+
+.custom-order-status {
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: #f5e8f1;
+  color: #854b75;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.custom-order-status.completed {
+  background: #e1f5e8;
+  color: #267747;
+}
+
+.custom-order-status.rejected {
+  background: #ffe8e8;
+  color: #a23d3d;
+}
+
+.custom-order-status.in-progress {
+  background: #e6efff;
+  color: #345a9b;
+}
+
+.custom-order-status.reviewing {
+  background: #fff1d8;
+  color: #8c601b;
+}
+
+.custom-order-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #f0e9ef;
+}
+
+.custom-order-details strong {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.custom-order-description {
+  grid-column: 1 / -1;
+}
+
+.custom-order-description p {
+  margin: 0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.custom-order-edit {
+  display: grid;
+  gap: 17px;
+  margin-top: 22px;
+}
+
+.custom-order-edit label {
+  display: grid;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.custom-order-edit select,
+.custom-order-edit textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #e5d9e3;
+  border-radius: 9px;
+  background: #fff;
+  color: #302638;
+  font: inherit;
+}
+
+.custom-order-edit textarea {
+  resize: vertical;
+}
+
+.custom-order-save {
+  justify-self: start;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  background: #8b557f;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.custom-order-save:disabled,
+.custom-orders-refresh:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.custom-orders-error,
+.custom-orders-success {
+  padding: 13px 15px;
+  margin-bottom: 18px;
+  border-radius: 9px;
+}
+
+.custom-orders-error {
+  background: #fff0f0;
+  color: #a32e2e;
+}
+
+.custom-orders-success {
+  background: #eaf8ee;
+  color: #247443;
+}
+
+.custom-orders-back {
+  margin-top: 18px;
+}
+
+@media (max-width: 650px) {
+  .custom-orders-page {
+    padding: 16px;
+  }
+
+  .custom-orders-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .custom-orders-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-order-details {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-order-description {
+    grid-column: auto;
+  }
+
+  .custom-order-card {
+    padding: 16px;
+  }
+}
